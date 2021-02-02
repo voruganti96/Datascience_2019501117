@@ -11,4 +11,4 @@ fit = kmeans(x,4)
 library(class)
 knnfit = knn(fit$centers,x,as.factor(c(-2,-1,1,2)))
 error = 1-sum(knnfit == y)/length(y)
-error
+errors
